@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+
+
+<body>
+
+  <h2>Bat Ball Stump Game</h2>
+  
+  <div id="play-button">
+    <button 
+    class="play-button" onclick="
+      match('Bat',computerTurn());
+      "><img class="play-image" src="Bat.png" alt="Bat Picture">
+    </button>
+
+    <button class="play-button" onclick="
+      match('Ball',computerTurn());
+      "><img class="play-image" src="Ball.png" alt="Ball Picture">
+    </button>
+
+    <button class="play-button" onclick="
+      match('Stump',computerTurn());
+      "><img class="play-image" src="Wicket.png" alt="Wicket Picture">
+    </button>
+  </div>
+
+  
+  <div id="resultDisplay" ></div>
+  <div id="scoreDisplay"></div>
+  
+  <div id="reset-button-div">
+  <button  id="reset-button" onclick="
+    resetScore();
+    ">RESET
+  </button>
+  </div>
+
+
+  <script src="script.js"> </script>
+</body>
+</html>

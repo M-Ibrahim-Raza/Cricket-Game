@@ -1,0 +1,119 @@
+body {
+  
+  background-image: url('Stadium.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-color: black; 
+}
+
+body::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1; 
+}
+
+  
+  h2 {
+    font-size: 80px;
+    text-align: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, serif;
+    font-weight: bold;
+    color: rgb(0, 127, 115); 
+    text-shadow: 
+       3px -2px 0 rgb(255, 244, 85), 
+      -3px  2px 0 rgb(225, 212, 27), 
+       3px  2px 0 rgb(255, 244, 85);
+    margin: 20px auto;
+  }
+
+
+  h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+
+  
+  #js-ScoreHeading {
+    font-size: 40px;
+    text-align: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, serif;
+    font-weight: bold;
+    color: rgb(0, 127, 115); 
+    text-shadow: 
+       1px -1px 0 rgb(255, 244, 85), 
+      -1px  1px 0 rgb(225, 212, 27), 
+       1px  1px 0 rgb(255, 244, 85);
+    margin: 20px 20px;
+  }
+  
+
+  #js-Score{
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .js-Score {
+    font-size: 31px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px -1px 0 rgb(255, 102, 85), -1px 1px 0 rgb(255, 102, 85), 1px 1px 0 rgb(255, 102, 85);
+    margin-right: -94px;
+    padding: 128px;
+  }
+
+  #play-button{
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+
+
+  .play-button{
+    padding: none;
+    border: none;
+    background: none;
+    height: 200px;
+    width: 200px;
+    margin:30px ;
+  }
+
+  .play-image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  #reset-button-div{
+    text-align: center;
+  }
+
+
+  #reset-button {
+    font-weight: bold;
+    height: 94px;
+    width: 147px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 17px;
+    font-weight: 500;
+    background-color: white;
+    color: #4CCD99;
+    border-radius: 22px;
+}
+
+  #resultDisplay {
+    text-align: center;
+  }
+
+  .result{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
